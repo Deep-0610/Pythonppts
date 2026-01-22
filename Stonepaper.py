@@ -46,7 +46,7 @@ def weighted_choice():
     return random.choices(choices, weights=weights)[0]
 
 def play(user_choice):
-    global user_score, computer_score, round_count, user_streak, computer_streak
+    global user_score, computer_score, round_count, user_streak, computer_streak, high_score
 
     user_history[user_choice] += 1
     computer_choice = weighted_choice()
